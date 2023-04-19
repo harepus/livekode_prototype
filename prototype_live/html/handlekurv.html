@@ -1,10 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="no">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <script defer src="../js/script.js"></script>
+    <title>Handlekurv - Nettbutikk Eksempel</title>
   </head>
-  <body></body>
+  <body>
+    <header>
+      <h1>Superdrikk Butikk - Sick</h1>
+      <nav>
+        <a href="../index.html">Hjem</a>
+        <a href="../html/produkter.html">Produktside</a>
+        <a href="../html/kontakt.html">Kontakt</a>
+        <a href="../html/handlekurv.html">Handlekurv</a>
+      </nav>
+    </header>
+    <main>
+      <h2>Handlekurv</h2>
+      <ul id="cart-items"></ul>
+      <p>Totalpris: <span id="total-price">0</span> kr</p>
+      <button id="checkout">Kjøp</button>
+    </main>
+    <div id="order-received-modal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Bestillingen er mottatt</h2>
+        <p>Takk for din bestilling! Vi vil behandle den så snart som mulig.</p>
+      </div>
+    </div>
+    <footer>
+      <p>&copy; 2023 Nettbutikk Eksempel. Alle rettigheter reservert.</p>
+    </footer>
+  </body>
 </html>
